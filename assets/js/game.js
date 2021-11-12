@@ -9,7 +9,7 @@ var randomNumber = function(min, max) {
 
 // fight function (now with parameter for enemy's object holding name, health, and attack values)
 var fight = function(enemy) {
-  while (playerInfo.health > 0 && enemy.health > 0) {
+  while (playerInfo.health > 0 && enemy.health>0) {
     // ask player if they'd like to fight or run
     var promptFight = window.prompt('Would you like to FIGHT or SKIP this battle? Enter "FIGHT" or "SKIP" to choose.');
 
@@ -222,8 +222,6 @@ console.log(enemyInfo);
 console.log(enemyInfo[0]);
 console.log(enemyInfo[0].name);
 console.log(enemyInfo[0]['attack']);
-
-/* END GAME INFORMATION / VARIABLES */
 
 /* RUN GAME */
 startGame();
